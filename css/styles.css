@@ -1,0 +1,379 @@
+:root {
+  --main-text-color: #757575;
+  --black-text-color: #212121;
+  --white-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --main-background-color: #2f303a;
+  --team-background-color: #e5e5e5;
+  --filter-background-color: #f5f4fa;
+  --button-radius: 4px;
+  --button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.benefits {
+  padding-bottom: 0px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--black-text-color);
+  text-align: center;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+.accent-section {
+  background-color: var(--main-background-color);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 1px solid red; */
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.card-item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/* ===============HEADER=============== */
+
+.header .logo {
+  margin-right: 93px;
+}
+
+.logo-black {
+  color: var(--black-text-color);
+}
+
+.header {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
+}
+
+.nav-list {
+  display: flex;
+  color: var(--black-text-color);
+}
+
+.nav-list .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-link:hover,
+.contacts:hover,
+/* .contacts[target='_blank']:hover, */
+.nav-link:focus,
+.contacts:focus,
+/* .contacts[target='_blank']:focus, */
+.nav-list .current {
+  color: var(--accent-color);
+}
+
+.header .container {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.head-contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.head-contacts .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* ===============HERO=============== */
+
+.hero.accent-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  margin: 0 auto 30px;
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.button {
+  display: flex;
+  padding: 10px 32px;
+  margin: 0 auto;
+  box-shadow: var(--button-shadow);
+  border-radius: var(--button-radius);
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
+  color: var(--white-text-color);
+}
+
+/* ===============BENEFITS=============== */
+
+.benefits-title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--black-text-color);
+}
+
+.benefits-list {
+  display: flex;
+}
+
+.benefits-item {
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+/* ===============WORKS=============== */
+
+.works-list {
+  display: flex;
+}
+
+.works-item {
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+/* ===============TEAM=============== */
+
+.team {
+  background-color: var(--team-background-color);
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item {
+  background-color: var(--white-text-color);
+  flex-basis: calc(100% / 4 - 30px);
+  border-radius: 5px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--black-text-color);
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* ===============FOOTER=============== */
+
+.footer.accent-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.logo-white {
+  color: var(--white-text-color);
+}
+
+.address-list {
+  font-style: normal;
+}
+
+.address-list .item:nth-child(1) {
+  color: var(--white-text-color);
+}
+
+.address-list .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+/* ===============PORTFOLIO=============== */
+/* ===============BUTTON-FILTER=============== */
+
+.work-exmpl {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.button-filter {
+  padding: 6px 22px;
+  border-radius: var(--button-radius);
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--filter-background-color);
+  color: var(--black-text-color);
+}
+
+.work-exmpl .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button-filter:hover,
+.button-filter:focus,
+.button-filter.current {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+.portfolio-item {
+  background-color: var(--white-text-color);
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.portfolio-item .link {
+  display: block;
+}
+
+.portfolio-card {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
+
+.portfolio-title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--black-text-color);
+}
+
+.portfolio-description {
+  font-size: 16px;
+  line-height: 1.88;
+}
